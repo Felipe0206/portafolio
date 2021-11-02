@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Andres Felipe Gil Gallo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="Andony Orellana Programador Web">
+    <style>
+        body{margin:0;padding:0;font-family:'Montserrat',sans-serif} .titulo-habi h2 {font-size: 50px;color: #4185d0;margin: 0;}.portada{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;flex-direction:row;background:linear-gradient(to left,#63e0f6,#283eb2);overflow:hidden}.barra{width:80vw;display:flex;align-items:center;justify-content:space-between}.barra figure{margin-left:0}.logo img{width:200px}.menu{font-size:20px;position:relative;z-index:10}.menu ul{display:inline-block;padding-inline-start:20px}.menu li{display:inline-block}.menu a{color:white;text-decoration:none}.hambur{display:none}.contenedor{width:80vw;display:flex;align-items:center;justify-content:space-between;padding-bottom:10px}.izq h1{color:white;font-size:70px;margin:0;position:relative;z-index:10}.izq p{color:rgb(192,192,192);font-size:40px;margin:0;position:relative;z-index:10}.contac{transform:scale(0);position:relative;z-index:10}.icon{color:white;background:rgb(65,72,107);border-radius:50%;padding:10px;height:30px;width:30px!important;position:relative;z-index:10}.der-imag{width:420px;animation-name:flotar;animation-duration:6s;animation-iteration-count:infinite;animation-timing-function:linear;position:relative;z-index:10}.yo{border-radius:50%;width:300px;position:absolute;top:150px;left:63%;border:10px solid #ffffff87;box-shadow:0 0 10px grey;opacity:0;z-index:10}.degrade{display:block;border-bottom:120px solid #eee;border-left:100vw solid transparent}.menur{background:rgba(54,90,194,.8);position:absolute;left:-100%;top:0;z-index:20;bottom:0;right:0;display:flex;width:100%;align-items:center}.menur ul{flex:1;padding:0}.menur li{display:block;margin:0;padding:8px 0;border-bottom:1px solid white;text-align:center}.menur a{font-size:20px;text-decoration:none;color:#ffffff}.menur li:first-child{border-top:1px solid white}.portafolio{padding:30px 0}.quiensoy{width: 100%; height: 80vh; display: flex;flex-direction: column;align-items: center; justify-content: center;}.todo-porta{width:100%;display:flex;align-items:center;justify-content:center;padding-bottom:10px;flex-wrap:wrap;flex-direction:row}.texto-porta{width:35%;text-align:initial}.texto-porta h3,h3{color:#4185d0;margin:0 0 5px 0;font-size:45px}.texto-porta p{color:#89898a;margin:0}.texto-porta ul{padding:0 0 0 20px;list-style:url("img/check.png")}.texto-porta ul li p{color:#484848}.texto-mi{width: 60%; text-align:initial; }  .con-quien{display: flex; flex-direction: column;align-items: center;} .con-quien h3{margin: 0px 0px 0px ;} .img-porta{width:45%;text-align:center}.img-porta img{width:90%}@keyframes flotar{25%{transform:translateY(10px)}75%{transform:translateY(-10px)}}@media screen and (max-width:1000px){.menu{font-size:17px}.menu ul{padding-inline-start:10px}.izq h1{font-size:40px}.izq p{font-size:25px}.der img{width:300px}.yo{width:200px!important;top:150px}}@media screen and (max-width:860px){.contenedor{width:90vw}.barra{width:90vw}}@media screen and (max-width:760px){.barra{width:90vw}.contenedor{width:90vw;padding-top:20px;justify-content:center;flex-wrap:wrap;flex-direction:row}.izq{text-align:center}.menu{display:none}.hambur{display:flex;align-items:center;justify-content:center;width:30px;height:30px;padding:15px;border-radius:50%;box-shadow:0 0 5px rgb(40,5,167);z-index:30}.hambur a{color:white;font-size:30px}.img-porta{width:80%}.texto-porta{width:80%}.swiper-button-next{display:none}.swiper-button-prev{display:none}}@media screen and (max-width:706px){.yo{width:250px;top:290px;left:calc(50% - 115px)} .con-quien h3{margin:0px 0px 0px 50px;}}@media screen and (max-width:375px){.yo{top:330px}}
+    </style>
+    
+</head>
+<body>
+    <section id="particles-js" class="portada">
+        <header class="header">
+            <div class="barra">
+                <figure class="logo">
+                    
+                </figure>
+                <nav class="menur" id="menu" >
+                        <ul><li><a class="list" id="inici" href="#">Inicio</a></li>
+                        <li><a class="list" id="habilida" href="#habil">Habilidades</a></li>
+                        <li><a class="list" id="proyec" href="#portafolio">Proyectos</a></li>
+                        <li><a class="list" id="contacto" href="#">Contactame</a></li></ul>
+                </nav>
+                <nav class="menu" >
+                    <ul><li><a class="list" id="inicio" href="#">Inicio</a></li></ul>
+                    <ul><li><a class="list" id="habilidad" href="#habil">Habilidades</a></li></ul>
+                    <ul><li><a class="list" id="proyect" href="#portafolio">Proyectos</a></li></ul>
+                    <ul><li><a class="list" id="contac" href="#">Contactame</a></li></ul>
+                </nav>
+                <div class="hambur"><a id="burguer-button"><i class="fas fa-bars"></i></a></div>
+            </div>
+            
+            <div class="contenedor">
+                <div class="izq">
+                    <h1 class="name">Andres Felipe Gil Gallo</h1>
+                    <p>Desarrollador Web</p>
+                    <!--inicio informacion de contacto-->
+                    <div id="iconos" class="contac">
+                        <a href="tel:3013453040"><i class="icon fas fa-mobile-alt"></i></a>
+                        <a href="mailto:conocimiento.02@gmail.com"><i class="icon far fa-envelope"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/andres-felipe-gil-gallo-38895221a/"><i class="icon fab fa-linkedin-in"></i></a>
+                        <a target="_blank" href="https://github.com/Felipe0206?tab=repositories"><i class="icon fab fa-github"></i></a>
+                    </div>
+                       
+                </div>
+                   <!--Foto e imagen laptop-->
+                <div class="der">
+                    <img class="der-imag" id="laptop" src="img/laptop.png" alt="laptop">
+                    <img class="yo" id="yo" src="img/yo.png" alt="Andres">
+                </div>
+             
+            </div>
+        </header>
+        <div class="degrade"></div>
+    </section>
+    
+    <section id="quiensoy" class="quiensoy">
+        <div class="con-quien">
+            <h3>¿Sabes quién soy?</h3>
+            <br>
+           <div class="texto-mi">
+                <p >
+                    Bienvenido a mi portafolio soy un joven de 19 años apasionado por la
+                    tecnología y la programación, resido en Colombia y actualmente estoy estudiando
+                    desarrollo web, me encanta la idea de programar todo lo que puedo imaginar 
+                    y hacerlo realidad. 
+                </p>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="portafolio" class="portafolio">
+            <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="todo-porta">
+                                <div class="texto-porta">
+                                    <h3>Merca todo</h3>
+                                    <p>Creado para administrar inventario.</p>
+                                    <ul>
+                                        <li><p>HTML 5</p></li>
+                                        <li><p>CSS 3</p></li>
+                                        <li><p>JavaScript</p></li>
+                                        <li><p>React</p></li>
+                                        <li><p>My sql</p></li>
+                                        <li><p>Django</p></li>
+                                    </ul>
+                                    <p>Proyecto colaborativo para un supermercado con Loguin, Crud, vista de productos y despliegue.</p>
+                                </div>
+                                <div class="img-porta">
+                                    <img src="img/merca-todo.png" alt="">
+                                </div>
+                                <a class="buton-pro" href="https://merca-todo-git-develop-merca-todo.vercel.app/">ver proyecto</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="todo-porta">
+                                <div class="texto-porta">
+                                    <h3>25 Retos</h3>
+                                    <p>Creado para mejorar los conocimientos en HTML,CSS y JavaScript</p>
+                                    <ul>
+                                        <li><p>HTML 5</p></li>
+                                        <li><p>CSS 3</p></li>
+                                        <li><p>javascript</p></li>
+                                        <li><p>React</p></li>
+                                        
+                                    </ul>
+                                    <p>Fue un proyecto propuesto por el bootcamp prográmate  en el cual teníamos que desarrollar un reto por día y luego crear una  Landing page para publicar cada uno de estos .</p>
+                                </div>
+                                <div class="img-porta">
+                                    <img src="img/25retos.png" alt="">
+                                </div>
+                                <a class="buton-pro" href="https://proyectosveinticinco.herokuapp.com/">ver proyecto</a>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="todo-porta">
+                                <div class="texto-porta">
+                                    <h3>Tetris</h3>
+                                    <p>Proyecto en JavaScript</p>
+                                    <ul>
+                                        <li><p>HTML 5</p></li>
+                                        <li><p>CSS 3</p></li>
+                                        <li><p>JavaScript</p></li>
+                                     
+                                    
+                                    </ul>
+                                    <p>Es un videojuego creado en canva .</p>
+                                </div>
+                                <div class="img-porta">
+                                    <img src="img/tetris.png" alt="">
+                                </div>
+                                <a class="buton-pro" href="https://felipe0206.github.io/Tetris/">ver proyecto</a>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="swiper-slide">
+                            <div class="todo-porta">
+                                <div class="texto-porta">
+                                    <h3>Cronometro</h3>
+                                    <p>Creado para mejorar los conocimientos en JavaScript</p>
+                                    <ul>
+                                        <li><p>HTML 5</p></li>
+                                        <li><p>CSS 3</p></li>
+                                        <li><p>JavaScript</p></li>
+                                    </ul>
+                                    <p>Fue propuesto por el bootcamp prográmate con el bjetivo de manejar bien JavaScript </p>
+                                </div>
+                                <div class="img-porta">
+                                    <img src="img/cronometro.png" alt="">
+                                    
+                                </div>
+                                <a class="buton-pro" href="https://felipe0206.github.io/Cronometro/">ver proyecto</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="todo-porta">
+                                <div class="texto-porta">
+                                    <h3>Adivina el animal </h3>
+                                    <p>Creado para un proceso de selección en un Bootcamp</p>
+                                    <ul>
+                                        <li><p>HTML 5</p></li>
+                                        <li><p>CSS 3</p></li>
+                                        
+                                    </ul>
+                                    <p>Fue un proyecto en el que se buscaba que el sistema adivinara uno de los cinco animales por medio de preguntas </p>
+                                </div>
+                                <div class="img-porta">
+                                    <img src="img/adivina-el-animal.png" alt="">
+                                </div>
+                                <a class="buton-pro" href="https://felipe0206.github.io/Adivina-tu-animal-/">ver proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+    </section>
+
+    <section id="habil" class="habilidades">
+        <div class="triangulo"></div>
+        <div class="titulo-habi">
+            <h2>Habilidades</h2>
+            <p>Con esto se crea la magia!</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/html.png" alt="">
+            <p class="habi-text" >HTML 5</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/css.png" alt="">
+            <p class="habi-text" >CSS 3</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/js.png" alt="">
+            <p class="habi-text" >JavaScript</p>
+        </div>
+
+        <div class="habilidad">
+            <img class="habi-img" src="img/react.png" alt="">
+            <p class="habi-text" >React</p>
+        </div>
+        
+        <div class="habilidad">
+            <img class="habi-img" src="img/mysql.png" alt="">
+            <p class="habi-text" >My sql</p>
+        </div>
+        
+        <div class="habilidad">
+            <img class="habi-img" src="img/git.png" alt="">
+            <p class="habi-text" >Git</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/github.png" alt="">
+            <p class="habi-text" >Github</p>
+        </div>
+        
+    </section>
+
+    <section class="pie">
+        <footer class="footer">
+            <p>Preparado para un diseño particular </p>
+        </footer>
+    </section>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/swiper.min.js" type="text/javascript"></script>
+    <script src="js/particles.js" type="text/javascript" ></script>
+    <script src="js/app.js" type="text/javascript" ></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/swiper.min.css">
+</body>
+</html>
