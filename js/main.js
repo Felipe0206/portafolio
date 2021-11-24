@@ -31,14 +31,14 @@ const $laptop = document.getElementById('laptop')
 const $iconos = document.getElementById('iconos')
 
 $contac.addEventListener('click', (event) => {
-    $yo.classList.add('activa');
-    $laptop.classList.add('no');
+    
+    $laptop.classList.add('si');
     $iconos.classList.add('si');
 } )
-
+//click en contactame
 $contacto.addEventListener('click', (event) => {
-    $yo.classList.add('activa');
-    $laptop.classList.add('no');
+   
+    $laptop.classList.add('si');
     $iconos.classList.add('si');
     $menu.classList.toggle('active');
 } )
