@@ -1,65 +1,17 @@
-var consulta = window.matchMedia('(max-width: 760px)');
-consulta.addListener(mediaQuery);
-
-function mediaQuery(){
-    if (consulta.matches) {
-    console.log('si');
-    $burguerButton.addEventListener('touchstart', toggleMenu);
-
-    }else{
-    console.log('no');
-    $burguerButton.removeEventListener('touchstart', toggleMenu);
-    }
-}
-
 var $burguerButton = document.getElementById('burguer-button');
 var $menu = document.getElementById('menu');
-mediaQuery();
 
-function toggleMenu(){
+$burguerButton.addEventListener('click', toggleMenu);
+$burguerButton.addEventListener('touchstart', toggleMenu);
+
+function toggleMenu() {
     $menu.classList.toggle('active');
-};
+}
 
-const $inici = document.getElementById('inici')
-const $inicio = document.getElementById('inicio')
-const $habilida = document.getElementById('habilida')
-const $proyec = document.getElementById('proyec')
-const $contac = document.getElementById('contac')
-const $contacto = document.getElementById('contacto')
-const $yo = document.getElementById('yo')
-const $laptop = document.getElementById('laptop')
-const $iconos = document.getElementById('iconos')
-
-$contac.addEventListener('click', (event) => {
-    
-    $laptop.classList.add('si');
-    $iconos.classList.add('si');
-} )
-//click en contactame
-$contacto.addEventListener('click', (event) => {
-   
-    $laptop.classList.add('si');
-    $iconos.classList.add('si');
-    $menu.classList.toggle('active');
-} )
-
-$inici.addEventListener('click', (event) => {
-    $yo.classList.remove('activa');
-    $laptop.classList.remove('no');
-    $iconos.classList.remove('si');
-    $menu.classList.toggle('active');
-} )
-
-$inicio.addEventListener('click', (event) => {
-    $yo.classList.remove('activa');
-    $laptop.classList.remove('no');
-    $iconos.classList.remove('si');
-} )
-
-$habilida.addEventListener('click', (event) => {
-    $menu.classList.toggle('active');
-} )
-
-$proyec.addEventListener('click', (event) => {
-$menu.classList.toggle('active');
-} )
+// Cerrar menu al hacer click en cualquier link del menu movil
+var $menuLinks = $menu.querySelectorAll('a');
+$menuLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+        $menu.classList.remove('active');
+    });
+});

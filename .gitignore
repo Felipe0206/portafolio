@@ -1,0 +1,13 @@
+# Claude Code
+.claude/
+memory/
+MEMORY.md
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor
+.vscode/
+*.swp

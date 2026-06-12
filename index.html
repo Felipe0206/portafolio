@@ -1,309 +1,754 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Andres Felipe Gil Gallo</title>
+    <title>Andres Felipe Gil Gallo | Full Stack Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <meta name="description" content="Andony Orellana Programador Web">
+    <meta name="description" content="Full Stack Developer con +5 años de experiencia en Java, Spring Boot, React, Angular, Python y arquitecturas cloud. Medellín, Colombia.">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/swiper.min.css">
     <style>
-        body{margin:0;padding:0;font-family:'Montserrat',sans-serif} .titulo-habi h2 {font-size: 50px;color: #4185d0;margin: 0;}.portada{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;flex-direction:row;background:linear-gradient(to left,#63e0f6,#283eb2);overflow:hidden}.barra{width:80vw;display:flex;align-items:center;justify-content:space-between}.barra figure{margin-left:0}.logo img{width:200px}.menu{font-size:20px;position:relative;z-index:10}.menu ul{display:inline-block;padding-inline-start:20px}.menu li{display:inline-block}.menu a{color:white;text-decoration:none}.hambur{display:none}.contenedor{width:80vw;display:flex;align-items:center;justify-content:space-between;padding-bottom:10px}.izq h1{color:white;font-size:70px;margin:0;position:relative;z-index:10}.izq p{color:rgb(192,192,192);font-size:40px;margin:0;position:relative;z-index:10}.contac{transform:scale(0);position:relative;z-index:10}.icon{color:white;background:rgb(65,72,107);border-radius:50%;padding:10px;height:30px;width:30px!important;position:relative;z-index:10}.der-imag{width:420px;animation-name:flotar;animation-duration:6s;animation-iteration-count:infinite;animation-timing-function:linear;position:relative;z-index:10}.yo{border-radius:50%;width:300px;position:absolute;top:150px;left:63%;border:10px solid #ffffff87;box-shadow:0 0 10px grey;opacity:0;z-index:10}.degrade{display:block;border-bottom:120px solid #eee;border-left:100vw solid transparent}.menur{background:rgba(54,90,194,.8);position:absolute;left:-100%;top:0;z-index:20;bottom:0;right:0;display:flex;width:100%;align-items:center}.menur ul{flex:1;padding:0}.menur li{display:block;margin:0;padding:8px 0;border-bottom:1px solid white;text-align:center}.menur a{font-size:20px;text-decoration:none;color:#ffffff}.menur li:first-child{border-top:1px solid white}.portafolio{padding:30px 0}.quiensoy{width: 100%; height: 80vh; display: flex;flex-direction: column;align-items: center; justify-content: center;}.todo-porta{width:100%;display:flex;align-items:center;justify-content:center;padding-bottom:10px;flex-wrap:wrap;flex-direction:row}.texto-porta{width:35%;text-align:initial}.texto-porta h3,h3{color:#4185d0;margin:0 0 5px 0;font-size:45px}.texto-porta p{color:#89898a;margin:0}.texto-porta ul{padding:0 0 0 20px;list-style:url("img/check.png")}.texto-porta ul li p{color:#484848}.texto-mi{width: 60%; text-align:initial; }  .con-quien{display: flex; flex-direction: column;align-items: center;} .con-quien h3{margin: 0px 0px 0px ;} .img-porta{width:45%;text-align:center}.img-porta img{width:90%}@keyframes flotar{25%{transform:translateY(10px)}75%{transform:translateY(-10px)}}@media screen and (max-width:1000px){.menu{font-size:17px}.menu ul{padding-inline-start:10px}.izq h1{font-size:40px}.izq p{font-size:25px}.der img{width:300px}.yo{width:200px!important;top:150px}}@media screen and (max-width:860px){.contenedor{width:90vw}.barra{width:90vw}}@media screen and (max-width:760px){.barra{width:90vw}.contenedor{width:90vw;padding-top:20px;justify-content:center;flex-wrap:wrap;flex-direction:row}.izq{text-align:center}.menu{display:none}.hambur{display:flex;align-items:center;justify-content:center;width:30px;height:30px;padding:15px;border-radius:50%;box-shadow:0 0 5px rgb(40,5,167);z-index:30}.hambur a{color:white;font-size:30px}.img-porta{width:80%}.texto-porta{width:80%}.swiper-button-next{display:none}.swiper-button-prev{display:none}}@media screen and (max-width:706px){.yo{width:250px;top:290px;left:calc(50% - 115px)} .con-quien h3{margin:0px 0px 0px 50px;}}@media screen and (max-width:375px){.yo{top:330px}}
+        body{margin:0;padding:0;font-family:'Montserrat',sans-serif}
+        .portada{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;flex-direction:row;background:linear-gradient(135deg,#0b0e3f,#1a2580,#2e5bba);overflow:hidden;min-height:100vh;position:relative}
+        /* Nav bar */
+        .barra{width:min(1200px,88vw);display:flex;align-items:center;justify-content:space-between;padding:24px 0}
+        .menu{font-size:14px;position:relative;z-index:10}
+        .menu ul{display:inline-block;padding-inline-start:16px;margin:0}
+        .menu li{display:inline-block}
+        .menu a{color:rgba(255,255,255,.8);text-decoration:none;transition:.3s;padding-bottom:3px;border-bottom:2px solid transparent;font-weight:600;letter-spacing:.3px}
+        .menu a:hover{color:white;border-bottom:2px solid rgba(99,224,246,.7)}
+        .hambur{display:none}
+        /* Mobile menu */
+        .menur{background:rgba(10,14,63,.97);position:fixed;left:-100%;top:0;z-index:200;bottom:0;right:0;display:flex;width:100%;align-items:center;transition:.35s;backdrop-filter:blur(8px)}
+        .menur.active{left:0}
+        .menur ul{flex:1;padding:0;list-style:none}
+        .menur li{display:block;margin:0;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.08);text-align:center}
+        .menur a{font-size:20px;text-decoration:none;color:#fff;letter-spacing:1px;font-weight:600}
+        .menur li:first-child{border-top:1px solid rgba(255,255,255,.08)}
+        /* Hero content */
+        .contenedor{width:min(1200px,88vw);display:flex;align-items:center;justify-content:space-between;padding:40px 0 80px;gap:40px}
+        .izq{flex:1;position:relative;z-index:10;max-width:600px}
+        .izq h1{color:white;font-size:64px;margin:8px 0;font-weight:700;line-height:1.05;position:relative;z-index:10}
+        .pretitulo{color:rgba(99,224,246,.9);font-size:12px;letter-spacing:4px;text-transform:uppercase;margin:0 0 8px;position:relative;z-index:10;font-weight:700}
+        .subtitulo{color:rgba(255,255,255,.68);font-size:18px;margin:12px 0 0;position:relative;z-index:10;line-height:1.5}
+        .hero-tags{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 0;position:relative;z-index:10}
+        .hero-tags span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.88);padding:7px 16px;border-radius:24px;font-size:12px;font-weight:600;transition:.3s}
+        .contac{position:relative;z-index:10;margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+        .icon{color:white;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:50%;padding:10px;height:32px;width:32px!important;position:relative;z-index:10;transition:.3s;display:inline-flex;align-items:center;justify-content:center}
+        .icon:hover{background:rgba(99,224,246,.25);border-color:rgba(99,224,246,.6);transform:scale(1.12) translateY(-2px)}
+        .degrade{display:none}
+        /* Photo */
+        .der{flex:1;display:flex;justify-content:center;align-items:center;position:relative;z-index:10;max-width:440px}
+        .tilt-wrap{display:inline-block;transform-style:preserve-3d;will-change:transform;animation:photoIn 1.1s .3s both cubic-bezier(.22,1,.36,1)}
+        @keyframes photoIn{from{opacity:0;transform:translateX(60px)}to{opacity:1;transform:translateX(0)}}
+        /* Circular floating photo — no frame */
+        .photo-circle{
+            width:460px;height:460px;border-radius:50%;
+            display:inline-block;overflow:hidden;
+            animation:flotar 7s ease-in-out infinite;
+            filter:drop-shadow(0 24px 48px rgba(0,0,0,.4));
+        }
+        .der-imag{
+            width:100%;height:100%;
+            object-fit:cover;object-position:center 8%;
+            display:block;
+        }
+        canvas{position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;z-index:0!important}
+        .header{position:relative;z-index:1;width:100%;display:flex;flex-direction:column;align-items:center}
+        @keyframes flotar{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+        /* Tablet */
+        @media screen and (max-width:960px){
+            .izq h1{font-size:48px}
+            .subtitulo{font-size:16px}
+            .der{max-width:360px}
+            .photo-circle{width:340px;height:340px}
+            .der-imag{width:340px;height:340px}
+            .contenedor{padding:30px 0 60px;gap:30px}
+        }
+        /* Mobile */
+        @media screen and (max-width:640px){
+            .menu{display:none}
+            .hambur{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);z-index:30;cursor:pointer}
+            .hambur a{color:white;font-size:20px;display:flex;align-items:center;justify-content:center}
+            .izq{text-align:center;max-width:100%}
+            .hero-tags{justify-content:center}
+            .contac{justify-content:center}
+            .contenedor{flex-direction:column-reverse;align-items:center;padding:20px 0 50px;gap:20px}
+            .photo-circle{width:240px;height:240px}
+            .der-imag{width:240px;height:240px}
+            .izq h1{font-size:38px}
+            .subtitulo{font-size:14px}
+            .status-badge{justify-content:center}
+            .scroll-ind{display:none}
+            .barra{width:90vw}
+        }
+
+        /* ── SCROLL PROGRESS ── */
+        #spr{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#283eb2,#4185d0,#63e0f6);z-index:99999;transition:width .08s linear}
+
+        /* ── CUSTOM CURSOR ── */
+        .c-dot{position:fixed;pointer-events:none;width:10px;height:10px;border-radius:50%;background:#fff;mix-blend-mode:difference;z-index:99997;transform:translate(-50%,-50%)}
+        .c-ring{position:fixed;pointer-events:none;width:38px;height:38px;border-radius:50%;border:2px solid rgba(255,255,255,.6);mix-blend-mode:difference;z-index:99996;transform:translate(-50%,-50%);transition:width .18s ease,height .18s ease,border-color .18s ease}
+        body.hover-link .c-ring{width:56px;height:56px;border-color:rgba(255,255,255,.9)}
+        @media(max-width:760px){.c-dot,.c-ring{display:none}}
+
+        /* ── STATUS BADGE ── */
+        .status-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(15,220,80,.15);border:1px solid rgba(20,230,90,.3);border-radius:30px;padding:7px 18px;font-size:11px;font-weight:700;color:#6bffab;letter-spacing:.9px;margin-bottom:16px;position:relative;z-index:10;text-transform:uppercase}
+        .sdot{width:7px;height:7px;background:#3dff7a;border-radius:50%;animation:sdpulse 1.6s ease-in-out infinite;flex-shrink:0}
+        @keyframes sdpulse{0%,100%{box-shadow:0 0 0 0 rgba(61,255,122,.8)}60%{box-shadow:0 0 0 8px transparent}}
+
+        /* ── NAME GRADIENT + GLOW ── */
+        .name{background:linear-gradient(130deg,#ffffff 40%,#63e0f6 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:nameglow 3.5s ease-in-out infinite}
+        .name .nl1,.name .nl2{display:inline-block;background:inherit;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        @keyframes nameglow{0%,100%{filter:drop-shadow(0 0 18px rgba(99,224,246,.25))}50%{filter:drop-shadow(0 0 40px rgba(99,224,246,.55))}}
+
+        /* ── SCROLL INDICATOR ── */
+        .scroll-ind{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:10;display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;opacity:.65;transition:.3s;text-decoration:none}
+        .scroll-ind:hover{opacity:1}
+        .scroll-ind span{font-size:8px;color:rgba(255,255,255,.65);letter-spacing:3px;text-transform:uppercase}
+        .scroll-ind-line{width:1px;height:36px;background:linear-gradient(to bottom,rgba(99,224,246,.9),transparent);animation:scline 1.8s ease-in-out infinite}
+        @keyframes scline{0%,100%{transform:scaleY(1) translateY(0);opacity:1}50%{transform:scaleY(.5) translateY(8px);opacity:.3}}
+
+        /* ── SKILLS MARQUEE ── */
+        .marquee-section{background:linear-gradient(90deg,#0b0f40,#1a2580,#0b0f40);padding:16px 0;overflow:hidden;border-top:1px solid rgba(99,224,246,.1);border-bottom:1px solid rgba(99,224,246,.1)}
+        .marquee-track{display:flex;width:max-content;animation:mq 35s linear infinite}
+        .marquee-track:hover{animation-play-state:paused}
+        .mq-item{display:flex;align-items:center;gap:10px;padding:0 28px;white-space:nowrap;font-size:12px;font-weight:700;color:rgba(255,255,255,.65);letter-spacing:.4px}
+        .mq-item i{color:#63e0f6;font-size:15px}
+        .mq-sep{color:rgba(99,224,246,.25);font-size:22px;line-height:1;padding:0 4px}
+        @keyframes mq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+        /* ── GLOWING HERO TAGS ── */
+        .hero-tags span{transition:.3s!important}
+        .hero-tags span:hover{background:rgba(99,224,246,.25)!important;border-color:rgba(99,224,246,.6)!important;color:#fff!important;box-shadow:0 0 12px rgba(99,224,246,.3);transform:translateY(-2px)}
+
+        /* ── TILT WRAPPER ── */
+        .tilt-wrap{transform-style:preserve-3d;will-change:transform;display:inline-block}
+        .tilt-wrap .der-imag{transform:translateZ(16px)}
+
+        /* ── IMAGE GLOW ── */
+        .der-imag{filter:drop-shadow(0 0 30px rgba(99,224,246,.25))}
     </style>
-    
 </head>
 <body>
+
+    <!-- cursor + scroll progress -->
+    <div id="spr"></div>
+    <div class="c-dot" id="cdot"></div>
+    <div class="c-ring" id="cring"></div>
+
+    <!-- ===== HERO ===== -->
     <section id="particles-js" class="portada">
         <header class="header">
             <div class="barra">
-                <figure class="logo">
-                    
-                </figure>
-                <nav class="menur" id="menu" >
-                        <ul><li><a class="list" id="inici" href="#">Inicio</a></li>
-                        <li><a class="list" id="habilida" href="#habil">Habilidades</a></li>
-                        <li><a class="list" id="proyec" href="#portafolio">Proyectos</a></li>
-                        <li><a class="list" id="contacto" href="#">Contactame</a></li></ul>
+                <figure class="logo"></figure>
+                <nav class="menur" id="menu">
+                    <ul>
+                        <li><a class="list" href="#">Inicio</a></li>
+                        <li><a class="list" href="#quiensoy">Sobre mí</a></li>
+                        <li><a class="list" href="#experiencia">Experiencia</a></li>
+                        <li><a class="list" href="#portafolio">Proyectos</a></li>
+                        <li><a class="list" href="#habil">Habilidades</a></li>
+                        <li><a class="list" href="#pie">Contacto</a></li>
+                    </ul>
                 </nav>
-                <nav class="menu" >
-                    <ul><li><a class="list" id="inicio" href="#">Inicio</a></li></ul>
-                    <ul><li><a class="list" id="habilidad" href="#habil">Habilidades</a></li></ul>
-                    <ul><li><a class="list" id="proyect" href="#portafolio">Proyectos</a></li></ul>
-                    <ul><li><a class="list" id="contac" href="#">Contactame</a></li></ul>
+                <nav class="menu">
+                    <ul><li><a href="#">Inicio</a></li></ul>
+                    <ul><li><a href="#quiensoy">Sobre mí</a></li></ul>
+                    <ul><li><a href="#experiencia">Experiencia</a></li></ul>
+                    <ul><li><a href="#portafolio">Proyectos</a></li></ul>
+                    <ul><li><a href="#habil">Habilidades</a></li></ul>
+                    <ul><li><a href="#pie">Contacto</a></li></ul>
                 </nav>
                 <div class="hambur"><a id="burguer-button"><i class="fas fa-bars"></i></a></div>
             </div>
-            
+
             <div class="contenedor">
                 <div class="izq">
-                    <h1 class="name">Andres Felipe Gil Gallo</h1>
-                    <p>Desarrollador Web</p>
-                    <!--inicio informacion de contacto-->
-                    <div id="iconos" class="contac">
+                    <div class="status-badge"><span class="sdot"></span>Disponible para proyectos</div>
+                    <p class="pretitulo">Full Stack Developer · Medellín, Colombia</p>
+                    <h1 class="name"><span class="nl1">Andres</span><br><span class="nl2">Felipe Gil</span></h1>
+                    <p class="subtitulo">+5 años construyendo aplicaciones en producción</p>
+                    <div class="hero-tags">
+                        <span>Java &amp; Spring Boot</span>
+                        <span>React &amp; Angular</span>
+                        <span>Python</span>
+                        <span>Docker &amp; Kubernetes</span>
+                        <span>Blockchain</span>
+                    </div>
+                    <div class="contac">
                         <a href="tel:3013453040"><i class="icon fas fa-mobile-alt"></i></a>
                         <a href="mailto:conocimiento.02@gmail.com"><i class="icon far fa-envelope"></i></a>
                         <a target="_blank" href="https://www.linkedin.com/in/andres-felipe-gil-gallo-38895221a/"><i class="icon fab fa-linkedin-in"></i></a>
                         <a target="_blank" href="https://github.com/Felipe0206?tab=repositories"><i class="icon fab fa-github"></i></a>
                     </div>
-                       
                 </div>
-                   <!--Foto e imagen laptop-->
                 <div class="der">
-                    
-                    <img class="der-imag" id="laptop" src="img/yo.png" alt="Andres">
+                    <div class="tilt-wrap" id="tilt-img">
+                        <div class="photo-circle">
+                            <img class="der-imag" src="img/yo.png" alt="Andres Felipe Gil Gallo">
+                        </div>
+                    </div>
                 </div>
-             
             </div>
+            <a class="scroll-ind" href="#quiensoy">
+                <span>scroll</span>
+                <div class="scroll-ind-line"></div>
+            </a>
         </header>
         <div class="degrade"></div>
     </section>
-    
+
+    <!-- ===== MARQUEE TECH ===== -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="mq-item"><i class="fab fa-java"></i>Java</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fas fa-leaf"></i>Spring Boot</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fab fa-react"></i>React</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fab fa-angular"></i>Angular</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fab fa-python"></i>Python</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fab fa-docker"></i>Docker</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fas fa-dharmachakra"></i>Kubernetes</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fas fa-database"></i>PostgreSQL</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fas fa-database"></i>MongoDB</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fab fa-node-js"></i>Node.js</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fas fa-cube"></i>Blockchain</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fab fa-aws"></i>Cloud</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fas fa-code-branch"></i>Microservicios</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fas fa-shield-alt"></i>Ciberseguridad</div><span class="mq-sep">·</span>
+            <!-- duplicate for seamless loop -->
+            <div class="mq-item"><i class="fab fa-java"></i>Java</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fas fa-leaf"></i>Spring Boot</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fab fa-react"></i>React</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fab fa-angular"></i>Angular</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fab fa-python"></i>Python</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fab fa-docker"></i>Docker</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fas fa-dharmachakra"></i>Kubernetes</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fas fa-database"></i>PostgreSQL</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fas fa-database"></i>MongoDB</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fab fa-node-js"></i>Node.js</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fas fa-cube"></i>Blockchain</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fab fa-aws"></i>Cloud</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fas fa-code-branch"></i>Microservicios</div><span class="mq-sep">·</span>
+            <div class="mq-item"><i class="fas fa-shield-alt"></i>Ciberseguridad</div><span class="mq-sep">·</span>
+        </div>
+    </div>
+
+    <!-- ===== SOBRE MÍ ===== -->
     <section id="quiensoy" class="quiensoy">
-        <div class="con-quien">
-            <h3>¿Sabes quién soy?</h3>
-            <br>
-           <div class="texto-mi">
-                <p >
-                    Bienvenido a mi portafolio soy un joven de 19 años apasionado por la
-                    tecnología y la programación, resido en Colombia y actualmente estoy estudiando
-                    desarrollo web, me encanta la idea de programar todo lo que puedo imaginar 
-                    y hacerlo realidad. 
-                </p>
+        <div class="quien-contenedor">
+            <div class="quien-texto">
+                <h2>Sobre mí</h2>
+                <p>Desarrollador Full Stack con más de <strong>5 años de experiencia</strong> en desarrollo, soporte y mantenimiento de aplicaciones web y móviles en producción para clientes internos y externos.</p>
+                <p>Especializado en <strong>Java, Spring Boot, Python y JavaScript</strong>, con dominio de React, Angular y arquitecturas cloud. Con experiencia en <strong>SLM (México)</strong> construyendo plataformas SaaS complejas, integración de pasarelas de pago, sistemas multicanal y arquitecturas escalables con Docker y Kubernetes.</p>
+                <p>Apasionado por construir sistemas escalables, aplicar principios SOLID y trabajar con equipos multidisciplinarios bajo metodologías ágiles. Habilidad comprobada para operar en entornos de alta demanda y con documentación limitada.</p>
+                <div class="quien-badges">
+                    <span>SOLID</span>
+                    <span>Scrum</span>
+                    <span>Microservicios</span>
+                    <span>Arq. Hexagonal</span>
+                    <span>Docker &amp; K8s</span>
+                    <span>Inglés B1</span>
+                    <span>Soporte N2/N3</span>
+                </div>
+            </div>
+            <div class="quien-stats">
+                <div class="kpi">
+                    <span data-target="5" data-suffix="+">5+</span>
+                    <p>Años de<br>experiencia</p>
+                </div>
+                <div class="kpi">
+                    <span data-target="60" data-suffix="+">60+</span>
+                    <p>Proyectos<br>entregados</p>
+                </div>
+                <div class="kpi">
+                    <span data-target="20" data-suffix="+">20+</span>
+                    <p>Tecnologías<br>dominadas</p>
+                </div>
+                <div class="kpi">
+                    <span>B1</span>
+                    <p>Nivel<br>de inglés</p>
+                </div>
             </div>
         </div>
-        
     </section>
-    
+
+    <!-- ===== EXPERIENCIA ===== -->
+    <section id="experiencia" class="experiencia">
+        <div class="titulo-seccion">
+            <h2>Experiencia</h2>
+            <p>Mi trayectoria profesional</p>
+        </div>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot activo"></div>
+                <div class="timeline-content">
+                    <div class="timeline-empresa">SLM</div>
+                    <h3>Full Stack Developer</h3>
+                    <span class="timeline-fecha">Mayo 2024 — Mayo 2026 &nbsp;·&nbsp; 2 años &nbsp;·&nbsp; México (Remoto)</span>
+                    <p>Desarrollo, soporte y mantenimiento de múltiples plataformas SaaS en producción para clientes internos y externos. Plataforma de identidad digital con QR, e-commerce con integración Stripe, panel de administración con monitoreo en tiempo real y sistema de alertas automáticas multicanal vía WhatsApp y email. Plataforma multitenancy de telecomunicaciones para gestión centralizada de planes, usuarios y reportes de múltiples empresas clientes en México. Desarrollo de módulos internos con Python, PHP y JavaScript, implementación de arquitectura de microservicios, pipelines CI/CD, principios SOLID y metodología Scrum en el ciclo de vida completo del desarrollo.</p>
+                    <div class="timeline-tags">
+                        <span>Java</span><span>Spring Boot</span><span>Python</span><span>PostgreSQL</span><span>PHP</span><span>JavaScript</span><span>Docker</span><span>Kubernetes</span><span>Stripe</span><span>WhatsApp API</span><span>Microservicios</span><span>Scrum</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-empresa">JavaLabs</div>
+                    <h3>Frontend Developer</h3>
+                    <span class="timeline-fecha">Marzo 2023 — Abril 2024 &nbsp;·&nbsp; 1 año 2 meses</span>
+                    <p>Desarrollo de proyectos Web3 con contratos inteligentes Solidity y DApps sobre blockchain. Aplicaciones descentralizadas con Angular 15-17 y Next.js, integración con wallets, arquitectura hexagonal con Spring Boot y PostgreSQL, despliegues con Docker y Kubernetes.</p>
+                    <div class="timeline-tags">
+                        <span>Angular 15-17</span><span>Next.js</span><span>Solidity</span><span>Go</span><span>Java</span><span>Redis</span><span>Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-empresa">KPMG</div>
+                    <h3>Auxiliar de Sistemas</h3>
+                    <span class="timeline-fecha">Julio 2022 — Febrero 2023 &nbsp;·&nbsp; 7 meses</span>
+                    <p>Resolución de incidentes Nivel 2 y Nivel 3 en entornos corporativos de alta criticidad. Mantenimiento de infraestructura, consultas y análisis SQL, apoyo en auditoría TI y gestión de sistemas legacy con documentación limitada.</p>
+                    <div class="timeline-tags">
+                        <span>Soporte N2/N3</span><span>SQL</span><span>Python</span><span>JavaScript</span><span>Auditoría TI</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-empresa">Coomeva</div>
+                    <h3>Full Stack Developer</h3>
+                    <span class="timeline-fecha">Julio 2021 — Julio 2022 &nbsp;·&nbsp; 1 año 1 mes</span>
+                    <p>Desarrollo y mantenimiento de aplicaciones financieras y cooperativas. Servidores escalables con Node.js y Oracle, interfaces con Angular 10 y Bootstrap, pruebas unitarias y mejora continua en plataformas de alto tráfico.</p>
+                    <div class="timeline-tags">
+                        <span>Java</span><span>Node.js</span><span>Angular 10</span><span>Oracle</span><span>Bootstrap</span><span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
     <section id="portafolio" class="portafolio">
-            <div class="swiper-container">
-                    <div class="swiper-wrapper">
+        <div class="titulo-seccion gsap-fade-up">
+            <h2>Proyectos</h2>
+            <p>Trabajo real en producción y proyectos de desarrollo</p>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
 
-                        <div class="swiper-slide">
-                            <div class="todo-porta">
-                                <div class="texto-porta">
-                                    <h3>Okhlos Prográmate</h3>
-                                    <p>Creado para automatizar un proceso de mentoría de la Fundación Educamos .</p>
-                                    <ul>
-                                        <li><p>Mongodb</p></li>
-                                        <li><p>Express</p></li>
-                                        <li><p>React</p></li>
-                                        <li><p>Node</p></li>
-                                        
-                                    </ul>
-                                    <p>Proyecto colaborativo creado para automatizar las sesiones de un programa de mentoría, desarrollado con metodologías agiles y Stack Mern. el proyecto está compuesto por tres vistas principales; administrador, mentor y estudiante. Las vistas de mentor y estudiante contienen un match que escoge al mentor adecuado para cada estudiante.</p>
-                                </div>
-                                <div class="img-porta">
-                                    <br>
-                                    <img src="img/Mern.png" alt="">
-                                </div>
-                                
-                                <div class="enlaces">
-                                    <br>
-                                <a class="buton-pro" href="https://fathomless-bastion-33135.herokuapp.com/">Despliegue</a><br>
-                                <a class="buton-pro" href="https://github.com/daferrom/MentoringApp">Github</a>
-                                </div>
+                <!-- ERLink -->
+                <div class="swiper-slide">
+                    <div class="todo-porta">
+                        <div class="texto-porta">
+                            <span class="proyecto-badge-inline produccion">En producción · SLM</span>
+                            <h3>ERLink</h3>
+                            <p>Plataforma SaaS de identidad digital y respuesta de emergencia basada en códigos QR físicos.</p>
+                            <div class="slide-techs">
+                                <span>Spring Boot</span><span>React</span><span>PostgreSQL</span><span>Stripe</span><span>WhatsApp API</span><span>Docker</span>
+                            </div>
+                            <p>App para usuarios finales con registro médico, tienda e-commerce con Stripe, panel de administración con monitoreo en tiempo real y alertas automáticas multicanal ante eventos críticos.</p>
+                            <div class="enlaces">
+                                <a class="buton-pro" target="_blank" href="https://erlink.app/">Ver sitio</a>
                             </div>
                         </div>
-
-                        <div class="swiper-slide">
-                            <div class="todo-porta">
-                                <div class="texto-porta">
-                                    <h3>Merca todo</h3>
-                                    <p>Creado para administrar inventario.</p>
-                                    <ul>
-                                        <li><p>HTML 5</p></li>
-                                        <li><p>CSS 3</p></li>
-                                        <li><p>JavaScript</p></li>
-                                        <li><p>React</p></li>
-                                        <li><p>My sql</p></li>
-                                        <li><p>Django</p></li>
-                                    </ul>
-                                    <p>Proyecto colaborativo para un supermercado con Loguin, Crud, vista de productos y despliegue.</p>
-                                </div>
-                                <div class="img-porta">
-                                    <br>
-                                    <img src="img/merca-todo.png" alt="">
-                                </div>
-                                
-                                <div class="enlaces">
-                                    <br>
-                                <a class="buton-pro" href="https://merca-todo-git-develop-merca-todo.vercel.app/">Despliegue</a><br>
-                                <a class="buton-pro" href="https://github.com/davidB2ya/Merca-Todo">Github</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="todo-porta">
-                                <div class="texto-porta">
-                                    <h3>25 Retos</h3>
-                                    <p>Creado para mejorar los conocimientos en HTML,CSS y JavaScript</p>
-                                    <ul>
-                                        <li><p>HTML 5</p></li>
-                                        <li><p>CSS 3</p></li>
-                                        <li><p>javascript</p></li>
-                                        <li><p>React</p></li>
-                                        
-                                    </ul>
-                                    <p>Fue un proyecto propuesto por el bootcamp prográmate  en el cual teníamos que desarrollar un reto por día y luego crear una  Landing page para publicar cada uno de estos .</p>
-                                </div>
-                                <div class="img-porta">
-                                    <br>
-                                    <img src="img/25retos.png" alt="">
-                                </div>
-                                <div class="enlaces">
-                                    <br>
-                                <a class="buton-pro" href="https://proyectosveinticinco.herokuapp.com/">Despliegue</a><br>
-                                <a class="buton-pro" href="https://github.com/Felipe0206/25-Retos">Github</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                            <div class="todo-porta">
-                                <div class="texto-porta">
-                                    <h3>Tetris</h3>
-                                    <p>Proyecto en JavaScript</p>
-                                    <ul>
-                                        <li><p>HTML 5</p></li>
-                                        <li><p>CSS 3</p></li>
-                                        <li><p>JavaScript</p></li>
-                                     
-                                    
-                                    </ul>
-                                    <p>Es un videojuego creado en canva .</p>
-                                </div>
-                                <div class="img-porta">
-                                    <br>
-                                    <img src="img/tetris.png" alt="">
-                                </div>
-                                <div class="enlaces">
-                                    <br>
-                                <a class="buton-pro" href="https://felipe0206.github.io/Tetris/">Despliegue</a><br>
-                                <a class="buton-pro" href="https://github.com/Felipe0206/Tetris">Github</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="swiper-slide">
-                            <div class="todo-porta">
-                                <div class="texto-porta">
-                                    <h3>Cronometro</h3>
-                                    <p>Creado para mejorar los conocimientos en JavaScript</p>
-                                    <ul>
-                                        <li><p>HTML 5</p></li>
-                                        <li><p>CSS 3</p></li>
-                                        <li><p>JavaScript</p></li>
-                                    </ul>
-                                    <p>Fue propuesto por el bootcamp prográmate con el bjetivo de manejar bien JavaScript </p>
-                                </div>
-                                <div class="img-porta">
-                                    <br>
-                                    <img src="img/cronometro.png" alt="">
-                                    
-                                </div>
-                                <div class="enlaces">
-                                    <br>
-                                <a class="buton-pro" href="https://felipe0206.github.io/Cronometro/">Despliegue</a><br>
-                                <a class="buton-pro" href="https://github.com/Felipe0206/Cronometro">Github</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="todo-porta">
-                                <div class="texto-porta">
-                                    <h3>Adivina el animal </h3>
-                                    <p>Creado para un proceso de selección en un Bootcamp</p>
-                                    <ul>
-                                        <li><p>HTML 5</p></li>
-                                        <li><p>CSS 3</p></li>
-                                        
-                                    </ul>
-                                    <p>Fue un proyecto en el que se buscaba que el sistema adivinara uno de los cinco animales por medio de preguntas </p>
-                                </div>
-                                
-                                <div class="img-porta">
-                                    <br>
-                                    <img src="img/adivina-el-animal.png" alt="">
-                                </div>
-                                <div class="enlaces">
-                                    <br>
-                                <a class="buton-pro" href="https://felipe0206.github.io/Adivina-tu-animal-/">Despliegue</a><br>
-                                <a class="buton-pro" href="https://github.com/Felipe0206/Adivina-tu-animal-">Github</a>
-                                </div>
-                            </div>
+                        <div class="img-porta">
+                            <img src="https://image.thum.io/get/width/1200/crop/800/noanimate/https://erlink.app/" alt="ERLink" loading="lazy">
                         </div>
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
+
+                <!-- Bigcel / Pantera -->
+                <div class="swiper-slide">
+                    <div class="todo-porta">
+                        <div class="texto-porta">
+                            <span class="proyecto-badge-inline produccion">En producción · SLM</span>
+                            <h3>Bigcel / Pantera</h3>
+                            <p>Plataforma multitenancy de telecomunicaciones y telefonía celular para México, USA y Canadá.</p>
+                            <div class="slide-techs">
+                                <span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>Docker</span><span>Kubernetes</span>
+                            </div>
+                            <p>Sistema de alta disponibilidad con módulos para administración de planes, usuarios y reportes de múltiples empresas clientes desde una sola plataforma.</p>
+                            <div class="enlaces">
+                                <a class="buton-pro" target="_blank" href="https://www.bigcel.mx/">Ver sitio</a>
+                            </div>
+                        </div>
+                        <div class="img-porta">
+                            <img src="https://image.thum.io/get/width/1200/crop/800/noanimate/https://www.bigcel.mx/" alt="Bigcel" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Okhlos -->
+                <div class="swiper-slide">
+                    <div class="todo-porta">
+                        <div class="texto-porta">
+                            <span class="proyecto-badge-inline colaborativo">Colaborativo · MERN</span>
+                            <h3>Okhlos Prográmate</h3>
+                            <p>Plataforma para automatizar el proceso de mentoría de la Fundación Educamos.</p>
+                            <div class="slide-techs">
+                                <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+                            </div>
+                            <p>Sistema con tres roles (administrador, mentor, estudiante) y algoritmo de match que asigna el mentor ideal para cada estudiante.</p>
+                            <div class="enlaces">
+                                <a class="buton-pro" href="https://fathomless-bastion-33135.herokuapp.com/">Despliegue</a>
+                                <a class="buton-pro buton-ghost" href="https://github.com/daferrom/MentoringApp">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="img-porta">
+                            <img src="img/Mern.png" alt="Okhlos Prográmate">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Merca Todo -->
+                <div class="swiper-slide">
+                    <div class="todo-porta">
+                        <div class="texto-porta">
+                            <span class="proyecto-badge-inline colaborativo">Colaborativo · Full Stack</span>
+                            <h3>Merca Todo</h3>
+                            <p>Sistema completo de administración de inventario para supermercado con despliegue en producción.</p>
+                            <div class="slide-techs">
+                                <span>React</span><span>Django</span><span>MySQL</span><span>JavaScript</span>
+                            </div>
+                            <p>CRUD completo con autenticación, gestión de productos e inventario. Desplegado en Vercel.</p>
+                            <div class="enlaces">
+                                <a class="buton-pro" href="https://merca-todo-git-develop-merca-todo.vercel.app/">Despliegue</a>
+                                <a class="buton-pro buton-ghost" href="https://github.com/davidB2ya/Merca-Todo">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="img-porta">
+                            <img src="img/merca-todo.png" alt="Merca Todo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 25 Retos -->
+                <div class="swiper-slide">
+                    <div class="todo-porta">
+                        <div class="texto-porta">
+                            <span class="proyecto-badge-inline personal">Personal · Frontend</span>
+                            <h3>25 Retos</h3>
+                            <p>25 mini-proyectos desarrollados en 25 días consecutivos publicados en una landing unificada.</p>
+                            <div class="slide-techs">
+                                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span>
+                            </div>
+                            <p>Proyecto del bootcamp Prográmate — demuestra consistencia, disciplina y fundamentos sólidos de frontend.</p>
+                            <div class="enlaces">
+                                <a class="buton-pro" href="https://proyectosveinticinco.herokuapp.com/">Despliegue</a>
+                                <a class="buton-pro buton-ghost" href="https://github.com/Felipe0206/25-Retos">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="img-porta">
+                            <img src="img/25retos.png" alt="25 Retos">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tetris -->
+                <div class="swiper-slide">
+                    <div class="todo-porta">
+                        <div class="texto-porta">
+                            <span class="proyecto-badge-inline personal">Personal · Canvas API</span>
+                            <h3>Tetris</h3>
+                            <p>Videojuego clásico recreado en JavaScript puro con Canvas API sin librerías externas.</p>
+                            <div class="slide-techs">
+                                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Canvas API</span>
+                            </div>
+                            <p>Implementación completa con colisiones, rotación de piezas, puntuación y niveles. Demuestra dominio de algoritmos y lógica de juego.</p>
+                            <div class="enlaces">
+                                <a class="buton-pro" href="https://felipe0206.github.io/Tetris/">Despliegue</a>
+                                <a class="buton-pro buton-ghost" href="https://github.com/Felipe0206/Tetris">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="img-porta">
+                            <img src="img/tetris.png" alt="Tetris">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </section>
 
+    <!-- ===== HABILIDADES ===== -->
     <section id="habil" class="habilidades">
         <div class="triangulo"></div>
         <div class="titulo-habi">
             <h2>Habilidades</h2>
-            <p>Con esto se crea la magia!</p>
+            <p>Mi stack tecnológico completo</p>
         </div>
-        <div class="habilidad">
-            <img class="habi-img" src="img/html.png" alt="">
-            <p class="habi-text" >HTML 5</p>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4><i class="fas fa-server"></i> Backend</h4>
+                <div class="skill-tags">
+                    <span class="tag">Java / Spring Boot</span>
+                    <span class="tag">Python / Flask</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">Go</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4><i class="fas fa-desktop"></i> Frontend</h4>
+                <div class="skill-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Angular 15-17</span>
+                    <span class="tag">Next.js</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Tailwind CSS</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4><i class="fas fa-database"></i> Bases de datos</h4>
+                <div class="skill-tags">
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Oracle</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">DynamoDB</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4><i class="fas fa-cloud"></i> DevOps &amp; Cloud</h4>
+                <div class="skill-tags">
+                    <span class="tag">Docker</span>
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">Redis</span>
+                    <span class="tag">Power BI</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4><i class="fas fa-plug"></i> APIs &amp; Integraciones</h4>
+                <div class="skill-tags">
+                    <span class="tag">REST APIs</span>
+                    <span class="tag">Stripe</span>
+                    <span class="tag">WhatsApp API</span>
+                    <span class="tag">Microservicios</span>
+                    <span class="tag">Arq. Hexagonal</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4><i class="fas fa-cube"></i> Blockchain &amp; Otros</h4>
+                <div class="skill-tags">
+                    <span class="tag">Solidity</span>
+                    <span class="tag">Web3</span>
+                    <span class="tag">Data Science</span>
+                    <span class="tag">Ciberseguridad</span>
+                    <span class="tag">SOLID / Scrum</span>
+                </div>
+            </div>
         </div>
-        <div class="habilidad">
-            <img class="habi-img" src="img/css.png" alt="">
-            <p class="habi-text" >CSS 3</p>
-        </div>
-        <div class="habilidad">
-            <img class="habi-img" src="img/js.png" alt="">
-            <p class="habi-text" >JavaScript</p>
-        </div>
-
-        <div class="habilidad">
-            <img class="habi-img" src="img/react.png" alt="">
-            <p class="habi-text" >React</p>
-        </div>
-        
-        <div class="habilidad">
-            <img class="habi-img" src="img/mysql.png" alt="">
-            <p class="habi-text" >My sql</p>
-        </div>
-        
-        <div class="habilidad">
-            <img class="habi-img" src="img/git.png" alt="">
-            <p class="habi-text" >Git</p>
-        </div>
-        <div class="habilidad">
-            <img class="habi-img" src="img/github.png" alt="">
-            <p class="habi-text" >Github</p>
-        </div>
-        
     </section>
 
-    <section class="pie">
+    <!-- ===== FOOTER ===== -->
+    <section id="pie" class="pie">
         <footer class="footer">
-            <p>Preparado para un diseño particular </p>
+            <p>Andres Felipe Gil Gallo &copy; 2026</p>
+            <div class="footer-icons">
+                <a target="_blank" href="https://www.linkedin.com/in/andres-felipe-gil-gallo-38895221a/"><i class="icon fab fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://github.com/Felipe0206?tab=repositories"><i class="icon fab fa-github"></i></a>
+                <a href="mailto:conocimiento.02@gmail.com"><i class="icon far fa-envelope"></i></a>
+                <a href="tel:3013453040"><i class="icon fas fa-mobile-alt"></i></a>
+            </div>
         </footer>
     </section>
+
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/swiper.min.js" type="text/javascript"></script>
-    <script src="js/particles.js" type="text/javascript" ></script>
-    <script src="js/app.js" type="text/javascript" ></script>
+    <script src="js/particles.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
-            pagination: {
-            el: '.swiper-pagination',
-            dynamicBullets: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+            slidesPerView: 1,
+            spaceBetween: 0,
+            grabCursor: true,
+            loop: true,
+            speed: 800,
+            effect: 'slide',
+            pagination: { el: '.swiper-pagination', dynamicBullets: true, clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            autoplay: { delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }
         });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script>
+    /* ── SCROLL PROGRESS ── */
+    (function(){
+        var bar = document.getElementById('spr');
+        window.addEventListener('scroll', function(){
+            var pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            bar.style.width = pct + '%';
+        }, {passive:true});
+    })();
+
+    /* ── CUSTOM CURSOR ── */
+    (function(){
+        var dot = document.getElementById('cdot');
+        var ring = document.getElementById('cring');
+        if(!dot || window.innerWidth < 760) return;
+        var mx=window.innerWidth/2, my=window.innerHeight/2, rx=mx, ry=my;
+        document.addEventListener('mousemove', function(e){
+            mx = e.clientX; my = e.clientY;
+            dot.style.left = mx+'px';
+            dot.style.top  = my+'px';
+        }, {passive:true});
+        (function loop(){
+            rx += (mx - rx) * 0.14;
+            ry += (my - ry) * 0.14;
+            ring.style.left = rx+'px';
+            ring.style.top  = ry+'px';
+            requestAnimationFrame(loop);
+        })();
+        document.querySelectorAll('a, button, .buton-pro, .skill-category, .kpi, .hero-tags span').forEach(function(el){
+            el.addEventListener('mouseenter', function(){ document.body.classList.add('hover-link'); });
+            el.addEventListener('mouseleave', function(){ document.body.classList.remove('hover-link'); });
+        });
+    })();
+
+    /* ── VANILLA TILT ON IMAGE ── */
+    if(window.VanillaTilt && document.getElementById('tilt-img')) {
+        VanillaTilt.init(document.getElementById('tilt-img'), {
+            max: 15, speed: 400, glare: true, 'max-glare': 0.2, perspective: 700
+        });
+    }
+
+    /* ── TEXT SCRAMBLE on pretitulo ── */
+    (function(){
+        var el = document.querySelector('.pretitulo');
+        if(!el) return;
+        var final = el.textContent;
+        var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz·—';
+        var frame = 0, total = 55;
+        el.style.opacity = 1;
+        var t = setInterval(function(){
+            el.textContent = final.split('').map(function(c, i){
+                if(c === ' ' || c === '·') return c;
+                if(frame > total * (i / final.length)) return c;
+                return chars[Math.floor(Math.random()*chars.length)];
+            }).join('');
+            if(++frame > total){ clearInterval(t); el.textContent = final; }
+        }, 28);
+    })();
+
+    /* ── GSAP ANIMATIONS ── */
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Status badge drops in first
+    gsap.from('.status-badge', { duration: 0.6, y: -20, opacity: 0, ease: 'back.out(2)', delay: 0.1 });
+
+    // Name lines slide from opposite sides with skew
+    gsap.from('.nl1', { duration: 1, x: -100, opacity: 0, skewX: -12, ease: 'power4.out', delay: 0.5 });
+    gsap.from('.nl2', { duration: 1, x: 100,  opacity: 0, skewX:  12, ease: 'power4.out', delay: 0.72 });
+
+    // Subtitle reveal
+    gsap.from('.subtitulo', { duration: 0.7, y: 28, opacity: 0, ease: 'power3.out', delay: 1.05 });
+
+    // Hero tags stagger with bounce
+    gsap.from('.hero-tags span', { duration: 0.5, y: 24, opacity: 0, stagger: 0.1, ease: 'back.out(1.8)', delay: 1.25 });
+
+    // Contact icons
+    gsap.from('.contac', { duration: 0.6, y: 20, opacity: 0, ease: 'power3.out', delay: 1.8 });
+
+    // Scroll indicator
+    gsap.from('.scroll-ind', { duration: 1, opacity: 0, ease: 'power2.out', delay: 2.5 });
+
+    // ── Bidirectional scroll animations (play↓ reverse↑ play↓ reverse↑ — infinite) ──
+    var ST = { toggleActions: 'play reverse play reverse' };
+
+    // Section titles
+    gsap.utils.toArray('.titulo-seccion, .titulo-habi').forEach(function(el) {
+        gsap.from(el, {
+            scrollTrigger: { trigger: el, start: 'top 88%', ...ST },
+            duration: 0.8, y: 44, opacity: 0, ease: 'power3.out'
+        });
+    });
+
+    // About — text from left, stats from right
+    gsap.from('.quien-texto', {
+        scrollTrigger: { trigger: '.quien-texto', start: 'top 88%', ...ST },
+        duration: 0.9, x: -60, opacity: 0, ease: 'power3.out'
+    });
+    gsap.from('.quien-stats', {
+        scrollTrigger: { trigger: '.quien-stats', start: 'top 88%', ...ST },
+        duration: 0.9, x: 60, opacity: 0, ease: 'power3.out'
+    });
+
+    // KPI cards scale bounce
+    gsap.utils.toArray('.kpi').forEach(function(el, i) {
+        gsap.from(el, {
+            scrollTrigger: { trigger: el, start: 'top 92%', ...ST },
+            duration: 0.6, scale: 0.65, opacity: 0, ease: 'back.out(2.2)',
+            delay: i * 0.1
+        });
+    });
+
+    // KPI counters — replay each time
+    document.querySelectorAll('.kpi span[data-target]').forEach(function(el) {
+        var target = parseInt(el.getAttribute('data-target'));
+        var suffix = el.getAttribute('data-suffix');
+        var obj = { val: 0 };
+        var tween = null;
+        ScrollTrigger.create({
+            trigger: el, start: 'top 90%',
+            onEnter: function() {
+                if(tween) tween.kill();
+                obj.val = 0;
+                tween = gsap.to(obj, { val: target, duration: 2, ease: 'power2.out',
+                    onUpdate: function() { el.textContent = Math.round(obj.val) + suffix; } });
+            },
+            onLeaveBack: function() {
+                if(tween) tween.kill();
+                el.textContent = '0' + suffix; obj.val = 0;
+            }
+        });
+    });
+
+    // Timeline — alternating sides
+    gsap.utils.toArray('.timeline-item').forEach(function(el, i) {
+        gsap.from(el, {
+            scrollTrigger: { trigger: el, start: 'top 90%', ...ST },
+            duration: 0.7, x: -70, opacity: 0, ease: 'power3.out',
+            delay: i * 0.06
+        });
+    });
+
+    // Skill cards stagger bounce
+    gsap.utils.toArray('.skill-category').forEach(function(el, i) {
+        gsap.from(el, {
+            scrollTrigger: { trigger: el, start: 'top 92%', ...ST },
+            duration: 0.6, y: 60, opacity: 0, ease: 'back.out(1.8)',
+            delay: i * 0.08
+        });
+    });
+
+    // Projects section
+    gsap.from('.portafolio .titulo-seccion', {
+        scrollTrigger: { trigger: '.portafolio', start: 'top 82%', ...ST },
+        duration: 0.8, y: 36, opacity: 0, ease: 'power3.out'
+    });
+
+    // Marquee section
+    gsap.from('.marquee-section', {
+        scrollTrigger: { trigger: '.marquee-section', start: 'top 95%', ...ST },
+        duration: 0.6, opacity: 0, ease: 'power2.out'
+    });
+    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.min.css">
-    <link rel="stylesheet" type="text/css" href="styles/swiper.min.css">
 </body>
 </html>
